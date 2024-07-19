@@ -1,3 +1,7 @@
+import { JSDOM } from 'jsdom'
+
+
+
 // URL normalization still a work in progress
 function normalizeURL(url) {
     //const baseURL = 'blog.boot.dev/path'
@@ -26,6 +30,10 @@ function normalizeURL(url) {
     //console.log(fullPath.slice(-1))
     // console.log(testUrl.host)
     // console.log(testUrl.pathname)
+}
+
+function getURLsFromHTML(htmlBody, baseURL) {
+    
 }
 
 export { normalizeURL };
